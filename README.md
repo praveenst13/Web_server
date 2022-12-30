@@ -34,7 +34,7 @@ content = """
 <head>
 </head>
 <body>
-<h1>Name: Praveen s</h1>
+<h1>Name: praveen s</h1>
 <h1>reference no: 22009017 </h1>
 </body>
 </html>
