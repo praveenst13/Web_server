@@ -33,15 +33,22 @@ from http.server import HTTPServer, BaseHTTPRequestHandler
 content = """
 <html>
 <head>
+<title>
+ Top five web application development frameworks:
+</title>
 </head>
 <body>
-<h1>Name: praveen s</h1>
-<h1>reference no: 22009017 </h1>
+<h1>Top five web application development frameworks:</h1>
+<h1>js</h1>
+<h1> Ember.js </h1>
+<h1> Laravel </h1>
+<h1> Ruby on Rails and Vue. js</h1>
+<h1> Java Spring Framework </h1>
 </body>
 </html>
 """
   
-class myserver1(BaseHTTPRequestHandler):
+class myserver(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
         self.send_header("content-type", 'text/html; charset=utf-8')
@@ -50,8 +57,9 @@ class myserver1(BaseHTTPRequestHandler):
 
 
 Server_address =('',80)
-httpd= HTTPServer(Server_address,myserver1)
+httpd= HTTPServer(Server_address,myserver)
 httpd.serve_forever()
+
 ```
 
 
