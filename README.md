@@ -27,6 +27,7 @@ Serving the HTML pages.
 Testing the webserver
 
 # PROGRAM:
+```
 from http.server import HTTPServer, BaseHTTPRequestHandler
 
 content = """
@@ -51,6 +52,7 @@ class myserver1(BaseHTTPRequestHandler):
 Server_address =('',80)
 httpd= HTTPServer(Server_address,myserver1)
 httpd.serve_forever()
+```
 
 
 
